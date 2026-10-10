@@ -47,9 +47,6 @@
 
 ### 📊 GitHub Analytics
 <p align="center">
-  <img src="https://github-readme-stats.shion.dev/api?username=LakoFusion&theme=tokyonight&hide_border=true&show_icons=true" alt="LakoFusion's GitHub Stats" />
-  <img src="https://streak-stats.demolab.com/?user=LakoFusion&theme=tokyonight&hide_border=true" alt="LakoFusion's Streak" />
-</p>
-<p align="center">
-  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=LakoFusion&theme=tokyonight&hide_border=true&layout=compact" alt="Top Languages" />
+  <img height="165em" src="https://github-readme-stats.shion.dev/api?username=LakoFusion&theme=tokyonight&hide_border=true&show_icons=true" alt="Lako's Stats" />
+  <img height="165em" src="https://streak-stats.demolab.com/?user=LakoFusion&theme=tokyonight&hide_border=true" alt="Lako's Streak" />
 </p>

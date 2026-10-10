@@ -1,255 +1,162 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="1180" height="610" role="img" aria-label="Lê Duy Nhật - Python Developer and Automation Specialist">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 320" width="1180" height="320" role="img" aria-label="LakoFusion Terminal Banner">
   <defs>
-    <!-- Background Dark Gradient -->
-    <radialGradient id="bg-grad-dark" cx="60%" cy="40%" r="80%">
-      <stop offset="0%" stop-color="#0b1728" />
-      <stop offset="50%" stop-color="#060c16" />
-      <stop offset="100%" stop-color="#02050b" />
+    <!-- Background Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#0a192f" />
+      <stop offset="50%" stop-color="#050b14" />
+      <stop offset="100%" stop-color="#020408" />
     </radialGradient>
 
-    <!-- Ambient Neon Accents -->
-    <radialGradient id="cyan-glow" cx="20%" cy="25%" r="45%">
-      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.14" />
+    <!-- Neon Glow Spots -->
+    <radialGradient id="cyan-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.25" />
       <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
     </radialGradient>
-    <radialGradient id="violet-glow" cx="85%" cy="75%" r="50%">
-      <stop offset="0%" stop-color="#7928ca" stop-opacity="0.16" />
+    <radialGradient id="purple-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7928ca" stop-opacity="0.20" />
       <stop offset="100%" stop-color="#7928ca" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Glass Surface Gradient -->
-    <linearGradient id="panel-card" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.50" />
-      <stop offset="100%" stop-color="#0a101d" stop-opacity="0.40" />
+    <!-- Linear Accents -->
+    <linearGradient id="neon-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0" />
+      <stop offset="30%" stop-color="#00f2fe" />
+      <stop offset="70%" stop-color="#7928ca" />
+      <stop offset="100%" stop-color="#7928ca" stop-opacity="0" />
     </linearGradient>
 
-    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f2fe" />
-      <stop offset="100%" stop-color="#38bdf8" />
-    </linearGradient>
-
-    <!-- Subtle Grid / Scanline -->
-    <pattern id="matrix-grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#334155" stroke-opacity="0.08" stroke-width="0.8" />
+    <!-- Cyber Grid Pattern -->
+    <pattern id="cyber-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-opacity="0.3" stroke-width="0.8" />
     </pattern>
 
     <style>
       .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
-      .title { font-weight: 700; fill: #f8fafc; letter-spacing: -0.5px; }
-      .headline { fill: #38bdf8; font-weight: 600; }
-      .muted { fill: #64748b; font-size: 13px; }
-      .lbl { fill: #00f2fe; font-size: 12px; font-weight: 600; letter-spacing: 0.5px; }
-      .val { fill: #e2e8f0; font-size: 13px; }
-      .pill-box { fill: #090f1d; stroke: #1e293b; stroke-width: 1; rx: 6px; }
-      .pill-text { fill: #94a3b8; font-size: 11px; font-weight: 500; }
-      .panel-header { fill: #38bdf8; font-size: 11px; font-weight: 700; letter-spacing: 1.2px; }
+      .brand { font-weight: 800; font-size: 46px; fill: #ffffff; letter-spacing: 2px; }
+      .subtext { font-size: 13px; fill: #00f2fe; letter-spacing: 4px; font-weight: 600; }
+      .meta { font-size: 11px; fill: #64748b; letter-spacing: 1px; }
+      .hud-val { font-size: 12px; fill: #94a3b8; font-weight: 500; }
     </style>
   </defs>
 
-  <!-- Canvas Frame -->
-  <rect width="1180" height="610" rx="20" fill="url(#bg-grad-dark)" stroke="#1e293b" stroke-width="1.5" />
-  <circle cx="200" cy="150" r="320" fill="url(#cyan-glow)" />
-  <circle cx="950" cy="460" r="350" fill="url(#violet-glow)" />
-  <rect width="1180" height="610" rx="20" fill="url(#matrix-grid)" />
+  <!-- Canvas Background -->
+  <rect width="1180" height="320" rx="16" fill="url(#bg-grad)" stroke="#1e293b" stroke-width="1.2" />
+  <circle cx="280" cy="160" r="260" fill="url(#cyan-glow)" />
+  <circle cx="900" cy="160" r="280" fill="url(#purple-glow)" />
+  <rect width="1180" height="320" rx="16" fill="url(#cyber-grid)" />
 
   <!-- Top Terminal Bar -->
-  <g transform="translate(32, 22)">
+  <g transform="translate(24, 20)">
     <circle cx="10" cy="10" r="5" fill="#ef4444" />
     <circle cx="26" cy="10" r="5" fill="#f59e0b" />
     <circle cx="42" cy="10" r="5" fill="#10b981" />
-    <text x="68" y="14" class="mono muted" font-size="12">lako@core-terminal: ~ /workspace/profile (master)</text>
-    <rect x="980" y="0" width="136" height="22" rx="11" fill="#090f1d" stroke="#1e293b" />
-    <circle cx="994" cy="11" r="3.5" fill="#10b981">
-      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    <text x="68" y="14" class="mono meta">SESSION_ID // LAKO-DAEMON-PROD</text>
+
+    <!-- Status Pill -->
+    <rect x="990" y="0" width="140" height="22" rx="11" fill="#070d19" stroke="#1e293b" />
+    <circle cx="1006" cy="11" r="3.5" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite" />
     </circle>
-    <text x="1006" y="15" class="mono" font-size="10" fill="#10b981" font-weight="600">STABLE // ONLINE</text>
+    <text x="1018" y="15" class="mono" font-size="10" fill="#10b981" font-weight="600">RUNTIME : ONLINE</text>
   </g>
 
-  <!-- ==================== LEFT PANEL: IDENTITY & RUNTIME (48%) ==================== -->
-  <g transform="translate(32, 60)">
-    <rect width="536" height="518" rx="14" fill="url(#panel-card)" stroke="#1e293b" stroke-width="1.2" />
+  <!-- Decorative Separator Line -->
+  <line x1="24" y1="52" x2="1156" y2="52" stroke="#1e293b" stroke-width="1" />
 
-    <!-- Panel Header -->
-    <g transform="translate(26, 24)">
-      <path d="M 0 0 L 14 0" stroke="#00f2fe" stroke-width="2.5" />
-      <text x="22" y="4" class="mono panel-header">SYSTEM.SPEC // IDENTITY &amp; CORE</text>
-      <line x1="0" y1="14" x2="484" y2="14" stroke="#1e293b" stroke-width="1" />
-    </g>
+  <!-- ==================== LEFT DECORATION: BRAND & RUNTIME PULSE ==================== -->
+  <g transform="translate(60, 110)">
+    <!-- Terminal Command Line -->
+    <text x="0" y="0" class="mono subtext">&gt; SYSTEM.INITIALIZE // RUNNING</text>
+    
+    <!-- Big Title -->
+    <text x="0" y="48" class="mono brand">LakoFusion
+      <tspan fill="#00f2fe">.</tspan>
+    </text>
 
-    <!-- Identity & Animated Role -->
-    <g transform="translate(26, 74)">
-      <text x="0" y="0" class="mono title" font-size="28">Lê Duy Nhật</text>
-      <text x="210" y="-3" class="mono muted" font-size="15">(@lakofusion)</text>
-      
-      <!-- Role Switcher -->
-      <g transform="translate(0, 26)">
-        <text class="mono headline" font-size="15">&gt; Python Developer &amp; Automation Engineer
-          <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.45;0.5;0.95;1" dur="7s" repeatCount="indefinite" />
-        </text>
-        <text class="mono headline" font-size="15">&gt; Backend Utilities &amp; Systems Builder
-          <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.45;0.5;0.95;1" dur="7s" repeatCount="indefinite" />
-        </text>
-        <line x1="392" y1="-14" x2="392" y2="2" stroke="#00f2fe" stroke-width="2">
-          <animate attributeName="opacity" values="0;1;0" dur="0.8s" repeatCount="indefinite" />
-        </line>
-      </g>
-      <text x="0" y="56" class="mono muted" font-size="12.5">Building automated workflows, scripts, and robust backend utilities.</text>
-    </g>
+    <!-- Blinking Cursor Accent -->
+    <rect x="340" y="14" width="12" height="36" fill="#00f2fe">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+    </rect>
 
-    <line x1="26" y1="168" x2="510" y2="168" stroke="#1e293b" stroke-width="1" />
+    <!-- Sub-label -->
+    <text x="0" y="80" class="mono meta">DAEMON WORKFLOWS &amp; DISTRIBUTED PIPELINES</text>
 
-    <!-- Runtime Attributes -->
-    <g transform="translate(26, 196)">
-      <text x="0" y="0" class="mono lbl">&gt; CORE FOCUS</text>
-      <text x="135" y="0" class="mono val">Automation &amp; System Daemons</text>
-
-      <text x="0" y="32" class="mono lbl">&gt; SPECIALTY</text>
-      <text x="135" y="32" class="mono val">Backend Services &amp; RESTful APIs</text>
-
-      <text x="0" y="64" class="mono lbl">&gt; ARCHITECTURE</text>
-      <text x="135" y="64" class="mono val">Microservices, Event-driven, Scraping</text>
-
-      <text x="0" y="96" class="mono lbl">&gt; ENVIRONMENT</text>
-      <text x="135" y="96" class="mono val" fill="#10b981">Linux / Containerized Docker / Cloud</text>
-    </g>
-
-    <line x1="26" y1="324" x2="510" y2="324" stroke="#1e293b" stroke-width="1" />
-
-    <!-- Terminal Command & Endpoints -->
-    <g transform="translate(26, 344)">
-      <rect width="484" height="144" rx="10" fill="#060c16" fill-opacity="0.85" stroke="#1e293b" />
-      
-      <g transform="translate(18, 22)">
-        <text x="0" y="0" class="mono" font-size="12" fill="#10b981">~/network $</text>
-        <text x="105" y="0" class="mono" font-size="12" fill="#e2e8f0">netstat --social-channels</text>
-
-        <text x="0" y="28" class="mono lbl" font-size="11">&gt; DISCORD</text>
-        <text x="105" y="28" class="mono val" font-size="12">discord.gg/rxw8Hwk3qA</text>
-
-        <text x="0" y="52" class="mono lbl" font-size="11">&gt; YOUTUBE</text>
-        <text x="105" y="52" class="mono val" font-size="12">@lakofusion2010</text>
-
-        <text x="0" y="76" class="mono lbl" font-size="11">&gt; TIKTOK</text>
-        <text x="105" y="76" class="mono val" font-size="12">@lakofusion</text>
-
-        <text x="0" y="100" class="mono muted" font-size="11">&gt; STATUS: <tspan fill="#10b981">Ready for open collaborations &amp; scripts</tspan></text>
-      </g>
+    <!-- Mini Pulse Graph Line -->
+    <g transform="translate(0, 110)">
+      <path d="M 0 10 L 80 10 L 95 -6 L 110 24 L 125 4 L 140 10 L 320 10" fill="none" stroke="#00f2fe" stroke-width="1.8" opacity="0.8">
+        <animate attributeName="stroke-dashoffset" values="400;0" dur="3s" repeatCount="indefinite" />
+      </path>
+      <circle cx="110" cy="24" r="3" fill="#10b981">
+        <animate attributeName="r" values="3;5;3" dur="1s" repeatCount="indefinite" />
+      </circle>
     </g>
   </g>
 
-  <!-- ==================== RIGHT PANEL: STACK & TELEMETRY (48%) ==================== -->
-  <g transform="translate(584, 60)">
-    <rect width="564" height="518" rx="14" fill="url(#panel-card)" stroke="#1e293b" stroke-width="1.2" />
+  <!-- ==================== CENTER DECORATIVE SEPARATOR ==================== -->
+  <line x1="560" y1="80" x2="560" y2="280" stroke="#1e293b" stroke-width="1" stroke-dasharray="4,4" />
 
-    <!-- Panel Header -->
-    <g transform="translate(26, 24)">
-      <path d="M 0 0 L 14 0" stroke="#00f2fe" stroke-width="2.5" />
-      <text x="22" y="4" class="mono panel-header">ENGINEERING.STACK // DEPLOYED TECH MATRIX</text>
-      <line x1="0" y1="14" x2="512" y2="14" stroke="#1e293b" stroke-width="1" />
-    </g>
-
-    <!-- Tech Categories & Badges -->
-    <g transform="translate(26, 68)">
-      
-      <!-- Category 1: Languages -->
-      <text x="0" y="0" class="mono lbl">[01] CORE LANGUAGES</text>
-      <g transform="translate(0, 12)">
-        <rect x="0" y="0" width="85" height="26" class="pill-box" />
-        <circle cx="12" cy="13" r="3" fill="#38bdf8" />
-        <text x="24" y="17" class="mono pill-text">Python</text>
-
-        <rect x="95" y="0" width="65" height="26" class="pill-box" />
-        <circle cx="107" cy="13" r="3" fill="#00add8" />
-        <text x="119" y="17" class="mono pill-text">Go</text>
-
-        <rect x="170" y="0" width="65" height="26" class="pill-box" />
-        <circle cx="182" cy="13" r="3" fill="#5865f2" />
-        <text x="194" y="17" class="mono pill-text">Lua</text>
+  <!-- ==================== RIGHT DECORATION: AUDIO/NETWORK SPECTRUM & HUD ==================== -->
+  <g transform="translate(620, 95)">
+    <!-- HUD Header -->
+    <text x="0" y="10" class="mono meta">ACTIVITY_TELEMETRY // IO_SIGNALS</text>
+    
+    <!-- Audio/Network Data Visualizer Bars -->
+    <g transform="translate(0, 30)">
+      <!-- 12 Animated Spectrum Bars -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="8" height="50" rx="3" fill="#00f2fe">
+          <animate attributeName="height" values="20;60;15;50;20" dur="1.8s" repeatCount="indefinite" />
+          <animate attributeName="y" values="30;-10;35;0;30" dur="1.8s" repeatCount="indefinite" />
+        </rect>
+        <rect x="18" y="0" width="8" height="35" rx="3" fill="#38bdf8">
+          <animate attributeName="height" values="45;20;65;30;45" dur="1.4s" repeatCount="indefinite" />
+          <animate attributeName="y" values="5;30;-15;20;5" dur="1.4s" repeatCount="indefinite" />
+        </rect>
+        <rect x="36" y="0" width="8" height="60" rx="3" fill="#6366f1">
+          <animate attributeName="height" values="60;35;20;70;60" dur="2s" repeatCount="indefinite" />
+          <animate attributeName="y" values="-10;15;30;-20;-10" dur="2s" repeatCount="indefinite" />
+        </rect>
+        <rect x="54" y="0" width="8" height="40" rx="3" fill="#818cf8">
+          <animate attributeName="height" values="30;65;40;20;30" dur="1.6s" repeatCount="indefinite" />
+          <animate attributeName="y" values="20;-15;10;30;20" dur="1.6s" repeatCount="indefinite" />
+        </rect>
+        <rect x="72" y="0" width="8" height="25" rx="3" fill="#a855f7">
+          <animate attributeName="height" values="15;45;70;25;15" dur="1.5s" repeatCount="indefinite" />
+          <animate attributeName="y" values="35;5;-20;25;35" dur="1.5s" repeatCount="indefinite" />
+        </rect>
+        <rect x="90" y="0" width="8" height="55" rx="3" fill="#c084fc">
+          <animate attributeName="height" values="50;15;40;65;50" dur="1.9s" repeatCount="indefinite" />
+          <animate attributeName="y" values="0;35;10;-15;0" dur="1.9s" repeatCount="indefinite" />
+        </rect>
+        <rect x="108" y="0" width="8" height="45" rx="3" fill="#00f2fe">
+          <animate attributeName="height" values="40;70;25;50;40" dur="1.7s" repeatCount="indefinite" />
+          <animate attributeName="y" values="10;-20;25;0;10" dur="1.7s" repeatCount="indefinite" />
+        </rect>
+        <rect x="126" y="0" width="8" height="30" rx="3" fill="#38bdf8">
+          <animate attributeName="height" values="25;50;75;30;25" dur="2.1s" repeatCount="indefinite" />
+          <animate attributeName="y" values="25;0;-25;20;25" dur="2.1s" repeatCount="indefinite" />
+        </rect>
       </g>
 
-      <!-- Category 2: Backend & Realtime -->
-      <text x="0" y="68" class="mono lbl">[02] BACKEND &amp; REALTIME</text>
-      <g transform="translate(0, 80)">
-        <rect x="0" y="0" width="90" height="26" class="pill-box" />
-        <circle cx="12" cy="13" r="3" fill="#059669" />
-        <text x="24" y="17" class="mono pill-text">FastAPI</text>
-
-        <rect x="100" y="0" width="75" height="26" class="pill-box" />
-        <circle cx="112" cy="13" r="3" fill="#f8fafc" />
-        <text x="124" y="17" class="mono pill-text">Flask</text>
-
-        <rect x="185" y="0" width="95" height="26" class="pill-box" />
-        <circle cx="197" cy="13" r="3" fill="#00f2fe" />
-        <text x="209" y="17" class="mono pill-text">Socket.io</text>
-      </g>
-
-      <!-- Category 3: Automation & Processing -->
-      <text x="0" y="136" class="mono lbl">[03] AUTOMATION &amp; COMPUTER VISION</text>
-      <g transform="translate(0, 148)">
-        <rect x="0" y="0" width="95" height="26" class="pill-box" />
-        <circle cx="12" cy="13" r="3" fill="#10b981" />
-        <text x="24" y="17" class="mono pill-text">Selenium</text>
-
-        <rect x="105" y="0" width="90" height="26" class="pill-box" />
-        <circle cx="117" cy="13" r="3" fill="#a855f7" />
-        <text x="129" y="17" class="mono pill-text">OpenCV</text>
-
-        <rect x="205" y="0" width="85" height="26" class="pill-box" />
-        <circle cx="217" cy="13" r="3" fill="#38bdf8" />
-        <text x="229" y="17" class="mono pill-text">NumPy</text>
-      </g>
-
-      <!-- Category 4: DevOps & Platform -->
-      <text x="0" y="204" class="mono lbl">[04] PLATFORMS &amp; DEPLOYMENT</text>
-      <g transform="translate(0, 216)">
-        <rect x="0" y="0" width="85" height="26" class="pill-box" />
-        <circle cx="12" cy="13" r="3" fill="#2496ed" />
-        <text x="24" y="17" class="mono pill-text">Docker</text>
-
-        <rect x="95" y="0" width="85" height="26" class="pill-box" />
-        <circle cx="107" cy="13" r="3" fill="#f8fafc" />
-        <text x="119" y="17" class="mono pill-text">Vercel</text>
-
-        <rect x="190" y="0" width="85" height="26" class="pill-box" />
-        <circle cx="202" cy="13" r="3" fill="#00c7b7" />
-        <text x="214" y="17" class="mono pill-text">Netlify</text>
-
-        <rect x="285" y="0" width="85" height="26" class="pill-box" />
-        <circle cx="297" cy="13" r="3" fill="#e2e8f0" />
-        <text x="309" y="17" class="mono pill-text">GitHub</text>
-      </g>
-
-      <!-- Category 5: Design & Prototyping -->
-      <text x="0" y="272" class="mono lbl">[05] DESIGN &amp; INTERFACE</text>
-      <g transform="translate(0, 284)">
-        <rect x="0" y="0" width="80" height="26" class="pill-box" />
-        <circle cx="12" cy="13" r="3" fill="#f24e1e" />
-        <text x="24" y="17" class="mono pill-text">Figma</text>
-
-        <rect x="90" y="0" width="80" height="26" class="pill-box" />
-        <circle cx="102" cy="13" r="3" fill="#00c4cc" />
-        <text x="114" y="17" class="mono pill-text">Canva</text>
+      <!-- Right HUD Panel Grid -->
+      <g transform="translate(190, 0)">
+        <rect width="280" height="70" rx="8" fill="#050a14" stroke="#1e293b" />
+        <g transform="translate(18, 22)">
+          <text x="0" y="0" class="mono meta">PACKET ENGINE</text>
+          <text x="140" y="0" class="mono hud-val" fill="#10b981">READY [200]</text>
+          <text x="0" y="24" class="mono meta">EXEC_LATENCY</text>
+          <text x="140" y="24" class="mono hud-val">&lt; 38 ms</text>
+        </g>
       </g>
     </g>
 
-    <!-- Bottom Telemetry Block -->
-    <g transform="translate(26, 412)">
-      <rect width="512" height="76" rx="10" fill="#060c16" fill-opacity="0.85" stroke="#1e293b" />
-      <text x="18" y="26" class="mono panel-header">SYSTEM.METRICS // ENGINE STATUS</text>
-      
-      <!-- Progress Bar 1 -->
-      <g transform="translate(18, 42)">
-        <text x="0" y="0" class="mono muted" font-size="11">Automation Workflows</text>
-        <rect x="170" y="-8" width="310" height="8" rx="4" fill="#0f172a" />
-        <rect x="170" y="-8" width="295" height="8" rx="4" fill="url(#accent-cyan)" />
-      </g>
-
-      <!-- Progress Bar 2 -->
-      <g transform="translate(18, 62)">
-        <text x="0" y="0" class="mono muted" font-size="11">API Service Integrity</text>
-        <rect x="170" y="-8" width="310" height="8" rx="4" fill="#0f172a" />
-        <rect x="170" y="-8" width="302" height="8" rx="4" fill="#10b981" />
-      </g>
+    <!-- Ambient Glowing Gradient Bar at bottom of panel -->
+    <rect x="0" y="145" width="470" height="3" rx="1.5" fill="url(#neon-line)" />
+    
+    <g transform="translate(0, 168)">
+      <text x="0" y="0" class="mono meta">0x7F_ASYNC_THREAD</text>
+      <text x="210" y="0" class="mono meta">STATUS: HEALTHY</text>
+      <text x="400" y="0" class="mono meta" fill="#10b981">● 99.9%</text>
     </g>
   </g>
 </svg>

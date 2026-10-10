@@ -1,13 +1,8 @@
 <div align="center">
-  <img src="./dark.svg" alt="LakoFusion - Python Developer and Automation Specialist" width="100%">
+  <img src="./dark.svg" alt="LakoFusion - Roblox & Discord Automation Specialist" width="100%">
 </div>
 
 <br/>
-
-# 💫 About Me
-> **A passionate Python Developer focused on building automated workflows, efficient scripts, and robust backend utilities.**
-
----
 
 ### 🌐 Connect with me
 <p align="left">
